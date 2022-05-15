@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet"  href="./css/index.css">
+        <link rel="stylesheet"  href="css/index.css">
         <title>Blog</title>
     </head>
 
@@ -16,7 +16,7 @@
         <header id="header"> 
             <div id="logo">
                 <a href="index.php">
-                    BLOG DE VIDEOJUEGOS
+                    BLOG <br>FULL MOTOS
                 </a>
 
             </div>
@@ -25,27 +25,28 @@
         <!--BARRA NAV  INICIO--->
             <nav id="nav">
                 <ul>
-                    <li>
-                        <a href="index.php">inicio</a>
+                <li>
+                        <a href="../index.php">INICIO</a>
                     </li>
                     <li>
-                        <a href="index.php">categoria 1</a>
+                        <a href="../index.php">HERO</a>
                     </li>
                     <li>
-                        <a href="index.php">categoria 2</a>
+                        <a href="index.php">YAMAHA</a>
                     </li>
                     <li>
-                        <a href="index.php">categoria 3</a>
+                        <a href="index.php">HONDA</a>
                     </li>
                     <li>
-                        <a href="index.php">categoria 4</a>
+                        <a href="index.php">KTM</a>
                     </li>
                     <li>
-                        <a href="index.php">sobre mi</a>
+                        <a href="index.php">SUZUKY</a>
                     </li>
                     <li>
-                        <a href="index.php">contac</a>
+                        <a href="index.php">PULSAR</a>
                     </li>
+                </ul>    
             </nav>
             <!--BARRA FINANL--->
 

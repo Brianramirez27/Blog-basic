@@ -12,6 +12,7 @@
 body{ 
     background-image: url(../img/cubes.png) ;
 }
+
 /* ESTILOS GENERALES FINAL*/
 
 
@@ -72,8 +73,10 @@ body{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-right: 0.05rem #2979cd solid;
-    border-radius:0.3rem ;
+    
+    
+    
+   
 }
 #nav ul li a{
     color: black;
@@ -82,6 +85,7 @@ body{
     padding-right: 0.3rem;  
     
 }
+
 #nav ul li:hover{
     background-color: #959595;
 }
@@ -106,6 +110,7 @@ body{
 
 /* ESTILOS PRINCIPAL INICIO*/
 #principal{
+    width: 100%;
     margin-left: 1.5rem;
     margin-right:1.5rem;
     padding: 1.5rem;
@@ -187,8 +192,72 @@ input[type="submit"]{
     align-items: center;
     justify-content: center;
 }
+/* ESTILOS LATERAL FINAL*/
+
+/*estilos lateral errores REGISTRO O LOGIN INICIO*/
+.alerta{                            /*ALERTAR GENERALES DE ERRORES */
+    display: inline-flex;
+    border-radius: 0.4rem;
+    padding:0.3rem;
+    margin-bottom: 0.5rem;   /* este margin se pone por la laerta de crear entradas queda muy pegadas sin este margin*/
+    background-color: red;
+}
+.registro_completo{                 /*CUANDO EL REGISTRO FUE EXITOSO ALA BASE DE DATOS*/
+   
+    display: inline-flex;
+    border-radius: 0.4rem;
+    padding:0.3rem;
+    background-color: green;
+}
+.registro_fallo{                   /*CUANDO EL REGISTRO FALLO ALA BASE DE DATOS*/
+    display: inline-flex;
+    border-radius: 0.4rem;
+    padding:0.3rem;
+    background-color: red;
+}
+
+/*estilos lateral errores REGISTRO O LOGIN INICIO*/
+
+
+
+/*STILOS LATERAL CUANDO HAY LOGIN INICIO*/
+.bienvenido{                        /* ESTILOS CUANDO HAY UN LOGIN CORECTO*/
+    border: 0.1rem #909090 solid;
+    margin-bottom: 2rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem #909090;
+    padding: 1rem;
+}
+.bienvenido_button{                     /*STILOS DEL BOTON CUANDO HAY LOGIN*/
+    margin: auto;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 80%;
+    color: black;
+    font-size: 1.2rem;
+    background-color: #2979cd;
+}
+.red{
+    background-color: rgb(248, 90, 90);
+}
+.verde{
+    background-color:green;
+}
+.violet{
+    background-color: blueviolet;
+}
+.pick{
+background-color: pink;
+}
+
+
+/*STILOS LATERAL CUANDO HAY LOGIN FINAL*/
 
 /* ESTILOS LATERAL FINAL*/
+
+
 
 /* ESTILOS CCONTEINER FINAL*/
 
@@ -206,26 +275,6 @@ input[type="submit"]{
     margin-top: 1rem;
 
 }
-/*estilos lateral errores login*/
-.alerta{
-    display: inline-flex;
-    border-radius: 0.4rem;
-    padding:0.3rem;
-    background-color: red;
-}
-.registro_completo{
-   
-    display: inline-flex;
-    border-radius: 0.4rem;
-    padding:0.3rem;
-    background-color: green;
-}
-.registro_fallo{
-    display: inline-flex;
-    border-radius: 0.4rem;
-    padding:0.3rem;
-    background-color: red;
-}
-/* estilos lateral errores login */
+
 /* ESTILOS FUTTER FINAL*/
 
