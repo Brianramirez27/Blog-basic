@@ -8,6 +8,15 @@ return $retur_sql;
 }
 
 
+/**se crea una funcion para consultar todas entradas */
+function td_entradas($conexion){
+    $sql="SELECT * FROM publications ORDER BY  ID  DESC    ";
+    $retur_sql =mysqli_query($conexion,$sql);
+    return $retur_sql;
+  
+}
+
+
 ?>
 
 

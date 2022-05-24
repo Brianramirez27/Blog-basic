@@ -3,7 +3,7 @@
 
 if(isset($_POST)){
     /* se inicia la conecion ala base de datos si hay post*/
-    require_once("../includes/conexion.php");
+    require_once("/wamp64/www/blog-php/back-end/conexion.php");
 
     /* se recojen los datos que estan llegando del post y se guardan en variables */
     $email = $_POST['email'];
@@ -20,11 +20,10 @@ if(isset($_POST)){
         /* si la contrasena es la misma  entramos ala condicion*/
         if($very_password){
             /* se crea una secion para mostrar el nombre y apellido  despues de comprovar credenciales */
-            $_SESSION["login_usuario"] = $datos_usuario["nombre"] ." ".$datos_usuario["apellido"]; 
+            $_SESSION["login_usuario"] = $datos_usuario; 
         /* si  la contrasena no es la misma se crea una  secion y  muestra un error  */    
         }else{
             $_SESSION["login_incorrecto"] = "error contraseña incorrecta";
-            
         }
     /* si el correo no es el mismo mostarmos un error con una secion*/    
     }else{
@@ -34,5 +33,5 @@ if(isset($_POST)){
     
 }
 /* re direcionamos todas las secionaes al index  */
-header("location: ../index.php");
+header("location: /blog-php/index.php");
 ?>

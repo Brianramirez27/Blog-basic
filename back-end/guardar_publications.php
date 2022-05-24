@@ -2,7 +2,7 @@
 /* se comprueba si esta llegando algun dato de regitro o del post */
 if(isset($_POST)){
     /**se ase la conecion ala base de datos si esxiste pos*/
-     require_once '../includes/conexion.php';
+     require_once '/wamp64/www/blog-php/back-end/conexion.php';
     /*se recogen los datosdel formulario de registro  en variables   */
     $titulo = $_POST["titulo"];
     $descricion = $_POST["descricion"];
@@ -33,25 +33,27 @@ if(isset($_POST)){
         
     if(count($error)==0){
         /**despues de comprobar que no halla errores se guar el nombre del usuario en una variable */
-        $nombre_login = $_SESSION["login_usuario"];
+        $nombre_login = $_SESSION["login_usuario"]["nombre"];
         /**se agregan los datos ala base de datos  con sus datos correspondientes */
         $add_publications="INSERT INTO publications VALUES(NULL,'$nombre_login','$titulo','$descricion','$categoria',CURRENT_TIMESTAMP)";
         $guardar_publications=mysqli_query($db,$add_publications);
         /**despues de guardar los datos se crean la seciones  de si se guardo corectamente o no */
         if($guardar_publications){
-            $_SESSION["publicado"]="su publicacion se a realizado con exito";
-
+            header("location: ../index.php");
             
         }else{
             $_SESSION["error_publicado"]="error al publicar";
+            header("location:../back-end/crear_publications");
         }
 
         /*errores de  campos vacion o general * */
     }else{
         $_SESSION["error"]= $error ;
+        header("location:../includes/crear_publications");
     }
     /**se redirecionan  las secipoones a  su lugar */
-    header("location:../back-end/crear_publications");
+
+
 }
 
 ?>

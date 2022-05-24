@@ -1,0 +1,33 @@
+/*INICIO DEL DIV PRINCIPAL PARA TD ENTRADAS */
+
+/*SE CAMBian por que  tiene un overflow scroll y el del index es hiden y al cambiar el div padre 
+tanbien se agregan las decoraciones de los tiyulos etc*/
+#principal_td_entradas{
+    width: 100%;
+    margin-left: 1.5rem;
+    margin-right:1.5rem;
+    padding: 1.5rem;
+    background-color:white ;
+    border: 0.1rem #909090 solid;
+    overflow:scroll;
+
+}
+#principal_td_entradas p{
+    color: #909090;
+    font-size: 1rem;
+
+}
+#principal_td_entradas h1{
+    margin-bottom: 2rem;
+    
+}
+#principal_td_entradas h2{
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    color:#2979cd ;
+}
+
+.entradas{
+margin-bottom: 1.5rem;
+}
+/*FIN DEL DIV PRINCIPAL PARA TD ENTRADAS */
